@@ -1,5 +1,5 @@
 import React from 'react'
-import { ChedCommissionImage, EdcsUsersBenefitImage, RoundedCheckImage } from '../SvgImages';
+import { EdcsUsersBenefitImage, RoundedCheckImage } from '../SvgImages';
 
 const EdcsBenefit = () => {
     return (

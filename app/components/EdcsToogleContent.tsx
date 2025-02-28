@@ -1,13 +1,18 @@
 "use client";
-import React from "react";
+import React, { JSX } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+
+type Data = {
+  id: number | string;
+  content: JSX.Element;
+}
 
 const EdcsToogleContent = ({
   activeTab,
   tabs,
 }: {
   activeTab: number | string;
-  tabs: any[];
+  tabs: Data[];
 }) => {
   const activeContent = tabs.find((tab) => tab.id === activeTab)?.content;
 
